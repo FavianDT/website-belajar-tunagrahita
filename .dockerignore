@@ -1,0 +1,24 @@
+# Abaikan paket PHP yang akan dipasang kembali di dalam image.
+/vendor
+
+# Abaikan riwayat Git dan berkas pengaturan lokal yang mungkin berisi rahasia.
+/.git
+/.env
+/.env.*
+!/.env.example
+
+# Abaikan tes yang tidak dibutuhkan untuk menjalankan aplikasi produksi.
+/tests
+
+# Abaikan cache dan sesi lokal agar tidak ikut terbawa ke server.
+/bootstrap/cache/*.php
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+
+# Abaikan log lokal yang hanya dibutuhkan saat pengembangan.
+/storage/logs/*.log
+
+# Abaikan hasil sementara PHPUnit.
+/.phpunit.cache
+/.phpunit.result.cache
